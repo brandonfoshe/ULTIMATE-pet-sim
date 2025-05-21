@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="350.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petsimulator.SelectionController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <children>
+      <TextArea editable="false" prefHeight="218.0" prefWidth="460.0" text="Feed - Raise hunger, but lower bathroom meter.&#10;Bathroom - Go to the bathroom, raising bathroom and lowering hunger.&#10;Treat - Feed your pet a treat, don't feed them too many or it might make them sick.&#10;Sleep - Put your pet to sleep, they won't be able to wake up until they're fully rested.&#10;Vet - Go on a trip to the vet with your pet, making them healthy again.&#10;Play - Play with your pet, tiring them, but making them happy.&#10;Abandon - Abandon your pet in a dumpster or street... Why??&#10;Pet - Pass the time by petting your pet, they don't care too much for this though...&#10;&#10;Stat meters start at semi-random values, with a full bar being better.&#10;Try to get your loyalty bar filled up to win!" />
+        <Button mnemonicParsing="false" onAction="#BackInstructions" text="Back" />
+    </children>
+</VBox>

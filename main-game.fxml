@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="600.0" prefWidth="400.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petsimulator.MainGameController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label fx:id="turnLabel" text="Turn counter">
+         <VBox.margin>
+            <Insets bottom="100.0" top="-175.0" />
+         </VBox.margin>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="260.0">
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <VBox.margin>
+            <Insets top="-100.0" />
+         </VBox.margin>
+         <children>
+            <StackPane fx:id="feedButtonWrapper" prefHeight="40.0" prefWidth="62.0">
+               <children>
+                  <Button fx:id="feedButton" mnemonicParsing="false" onAction="#ButtonClick" prefHeight="25.0" prefWidth="43.0" text="Feed" />
+               </children>
+            </StackPane>
+            <StackPane fx:id="bathroomButtonWrapper" prefHeight="40.0" prefWidth="103.0">
+               <children>
+                  <Button fx:id="bathroomButton" mnemonicParsing="false" onAction="#ButtonClick" text="Use bathroom" />
+               </children>
+            </StackPane>
+            <StackPane fx:id="treatButtonWrapper" prefHeight="40.0" prefWidth="96.0">
+               <children>
+                  <Button fx:id="treatButton" mnemonicParsing="false" onAction="#ButtonClick" text="Give treat" />
+               </children>
+            </StackPane>
+            <StackPane fx:id="sleepButtonWrapper" prefHeight="40.0" prefWidth="59.0">
+               <children>
+                  <Button fx:id="sleepButton" mnemonicParsing="false" onAction="#ButtonClick" text="Sleep" />
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="260.0">
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+         <children>
+            <StackPane fx:id="vetButtonWrapper" prefHeight="40.0" prefWidth="75.0">
+               <children>
+                  <Button fx:id="vetButton" mnemonicParsing="false" onAction="#ButtonClick" text="Visit vet" />
+               </children>
+            </StackPane>
+            <StackPane fx:id="playButtonWrapper" prefHeight="40.0" prefWidth="59.0">
+               <children>
+                  <Button fx:id="playButton" mnemonicParsing="false" onAction="#ButtonClick" text="Play" />
+               </children>
+            </StackPane>
+            <StackPane fx:id="abandonButtonWrapper" prefHeight="40.0" prefWidth="85.0">
+               <children>
+                  <Button fx:id="abandonButton" mnemonicParsing="false" onAction="#ButtonClick" prefHeight="25.0" prefWidth="68.0" text="Abandon" />
+               </children>
+            </StackPane>
+            <StackPane prefHeight="40.0" prefWidth="58.0">
+               <children>
+                  <Button fx:id="skipButton" mnemonicParsing="false" onAction="#ButtonClick" text="Skip" />
+               </children>
+            </StackPane>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="21.0" prefWidth="260.0">
+         <children>
+            <Label text="Energy" />
+            <ProgressBar fx:id="energyBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></ProgressBar>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="24.0" prefWidth="260.0">
+         <children>
+            <Label text="Hunger" />
+            <ProgressBar fx:id="hungerBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></ProgressBar>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="30.0" prefWidth="260.0">
+         <children>
+            <Label text="Bathroom" />
+            <ProgressBar fx:id="bathroomBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></ProgressBar>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="24.0" prefWidth="260.0">
+         <children>
+            <Label text="Health" />
+            <ProgressBar fx:id="healthBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></ProgressBar>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="22.0" prefWidth="260.0">
+         <children>
+            <Label text="Happiness" />
+            <ProgressBar fx:id="happinessBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></ProgressBar>
+         </children></HBox>
+      <HBox alignment="CENTER" prefHeight="26.0" prefWidth="260.0">
+         <children>
+            <Label text="Loyalty" />
+            <ProgressBar fx:id="loyaltyBar" prefWidth="200.0" progress="0.0">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin></ProgressBar>
+         </children>
+      </HBox>
+      <Label fx:id="imaginePet" text="Imagine your pet sitting here" wrapText="true">
+         <VBox.margin>
+            <Insets bottom="-175.0" top="40.0" />
+         </VBox.margin>
+      </Label>
+   </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</VBox>

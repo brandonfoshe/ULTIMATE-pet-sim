@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox alignment="CENTER" prefHeight="400.0" prefWidth="350.0" spacing="20.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.petsimulator.InstructionsController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+   <children>
+      <Label fx:id="petInfoLabel" text="Pet info" />
+      <Label fx:id="Instructions" text="Dynamic Text" wrapText="true" />
+      <TextField fx:id="nameInput" alignment="CENTER" promptText="Enter pet's name here">
+         <VBox.margin>
+            <Insets left="50.0" right="50.0" />
+         </VBox.margin></TextField>
+      <HBox alignment="CENTER" prefHeight="46.0" prefWidth="310.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#startEasy" text="Easy">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#startMedium" text="Medium">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#startHard" text="Hard">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#startExtreme" text="Impossible">
+               <HBox.margin>
+                  <Insets right="20.0" />
+               </HBox.margin>
+            </Button>
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#help" text="Help" />
+   </children>
+</VBox>
